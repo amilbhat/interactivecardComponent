@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+    <title>Interactive Card Details Form</title>
+</head>
+<body>
+    <main class="container">
+        <div>
+        <section class="card">
+            <img src="images/card-logo.svg" alt="">
+            <h2 id="card-number">0000 0000 0000 0000</h2>
+            <div>
+            <h3 id="card-name">Lorem, ipsum.</h3>
+            <h3 id="card-exp">00/00</h3>
+            </div>
+        </section>
+        <img class="card-back" src="images/bg-card-back.png" alt="Card Details" >
+        <!-- Add CVC to back img later -->
+    </div>
+        <form class="card-details-form">
+            <p>CARDHOLDER NAME</p>
+            <input type="text" id="cardHolder-name" placeholder="e.g. Jane Appleseed">
+
+            <p>CARD NUMBER</p>
+            <input type="number" id="cardholder-number" placeholder="e.g. 1234 5678 9123 0000">
+            <div>
+                <section>
+                    <p>EXP. DATE (MM/YY)</p>
+                    <input type="number" id="exp-month" placeholder="MM">
+                    <input type="number" id="exp-year" placeholder="YY">
+                </section>
+                
+                <section>
+                    <p>CVC</p>
+                    <input type="number" id="card-cvc" placeholder="e.g. 123">
+            </section> 
+        </div>
+        <button id="submit-btn">Confirm</button>
+        </form>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

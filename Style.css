@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/* 
+  ##########  Card Styles   ##########
+*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+
+.card {
+    background-image: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    padding: 1rem;
+    border-radius: 5px;
+    padding: 1.5rem;
+    color: #fff;
+    font-weight: 300;
+    width: 20rem;
+    margin-left: 5rem;
+}
+
+.card-back {
+    width: 20rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+#card-number {
+    font-weight: 500;
+
+}
+.card img{
+    width: 4rem;
+    margin-bottom: 3rem;
+}
+.card div {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    font-size: 0.8rem;
+}
+
+/* 
+    ##########    Form Styles   ##########
+*/
+
+.card-details-form { 
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.card-details-form p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.card-details-form input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+    font-weight: 500;
+    width: 100%;
+}
+
+.card-details-form div {
+    display: flex;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.card-details-form div section:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.card-details-form div input{
+    width: 4rem;
+}
+.card-details-form  div section:nth-child(2) input{
+    width: 100%;
+}
+
+#submit-btn {
+    width: 100%;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+}
